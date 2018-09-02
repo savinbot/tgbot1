@@ -1,0 +1,27 @@
+{
+  "name": "tgbot1",
+  "scripts": {
+  },
+  "env": {
+    "TELEGRAM_TOKEN": "438788267:AAG8FkHEohtPAhTPPB_1FDn-FrFtd8YT8yI"
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/savinbot/tgbot"
+    }
+  ]
+}
